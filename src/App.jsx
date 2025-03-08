@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Table from "./Table";
+import NoMatch from "./NoMatch";
 function App() {
-  const [query, SetQuery] = useState("");
-  const [data, setData] = useState([]);
+  const [query, SetQuery] = useState([]);
+  const [data, setData] = useState([]); //stores  the fetched data as array
 
   const keys = ["firstName", "lastName", "email"];
 
@@ -30,7 +31,11 @@ function App() {
         </div>
 
         <div className="table-cont">
-          <Table data={filterData}></Table>
+          {filterData.length === 0 ? (
+            <NoMatch></NoMatch>
+          ) : (
+            <Table data={filterData}></Table>
+          )}
         </div>
       </div>
     </>

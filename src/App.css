@@ -21,3 +21,8 @@ input {
   margin: 20px;
   width: 50%;
 }
+
+.nomatch {
+  text-align: center;
+  font-size: 25px;
+}
