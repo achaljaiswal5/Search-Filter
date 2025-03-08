@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./App.css";
 import Table from "./Table";
 function App() {
   const [query, SetQuery] = useState("");
@@ -28,7 +29,7 @@ function App() {
           />
         </div>
 
-        <div className="table">
+        <div className="table-cont">
           <Table data={filterData}></Table>
         </div>
       </div>

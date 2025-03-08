@@ -1,6 +1,6 @@
 const Table = ({ data }) => {
   return (
-    <table className="table">
+    <table className="table table-bordered table-color">
       <thead>
         <tr>
           <th scope="col">Name</th>

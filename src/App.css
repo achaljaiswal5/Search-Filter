@@ -1,5 +1,23 @@
+body {
+  background-color: #98d2c0;
+}
 .app {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+}
+
+input {
+  background-color: #f6f8d5;
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  border: none;
+}
+
+.table-cont {
+  margin: 20px;
+  width: 50%;
 }
